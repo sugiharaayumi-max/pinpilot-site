@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PinPilot 隱私權政策</title>
+<style>
+  :root{
+    --bg:#f5f7f4; --card:#ffffff; --ink:#142033; --muted:#6c7688; --line:#e3e7f2; --brand:#5e4bd9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#101418; --card:#1b222b; --ink:#eaf0f8; --muted:#94a0b3; --line:#262e3b; --brand:#8b79ff;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#101418; --card:#1b222b; --ink:#eaf0f8; --muted:#94a0b3; --line:#262e3b; --brand:#8b79ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"PingFang TC","Noto Sans TC","Heiti TC",system-ui,sans-serif;line-height:1.85}
+  main{max-width:760px;margin:0 auto;padding:48px 16px 96px}
+  h1{font-size:28px;margin:0 0 6px}
+  .date{color:var(--muted);font-size:14px;margin-bottom:32px}
+  section{background:var(--card);border-radius:16px;padding:22px 24px;margin-bottom:16px}
+  h2{font-size:18px;margin:0 0 10px}
+  p,li{font-size:15px}
+  ul{padding-left:20px;margin:8px 0}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 6px;text-align:left;vertical-align:top}
+  th{color:var(--muted);font-weight:500}
+  a{color:var(--brand)}
+  .lead{font-size:16px}
+</style>
+</head>
+<body>
+<main>
+  <h1>PinPilot 隱私權政策</h1>
+  <div class="date">最後更新：2026 年 9 月 18 日</div>
+
+  <section>
+    <p class="lead"><strong>PinPilot 不會蒐集、上傳或分享你的個人資料。</strong>
+    這個 app 沒有帳號、沒有廣告、沒有分析或追蹤工具，開發者拿不到你的任何資料。</p>
+  </section>
+
+  <section>
+    <h2>留在手機裡的資料</h2>
+    <p>以下這些只存在你自己的手機上（app 的私有資料夾），移除 app 就一起消失：</p>
+    <ul>
+      <li>收藏的座標與路線、最近去過的地點</li>
+      <li>還沒播放的座標串草稿、走法與速度等設定</li>
+      <li>模擬狀態（是否正在模擬、走到哪裡）</li>
+    </ul>
+    <p>app 已關閉 Android 的自動備份（<code>allowBackup=false</code>），所以這些內容不會被備份到你的 Google 帳號。</p>
+  </section>
+
+  <section>
+    <h2>會連到網路的兩件事</h2>
+    <p>app 只有這兩種情況會對外連線，兩者都不帶帳號、不帶裝置識別碼：</p>
+    <table>
+      <tr><th>用途</th><th>送出什麼</th><th>對象</th></tr>
+      <tr>
+        <td>地名搜尋與座標反查</td>
+        <td>你輸入的關鍵字，或要查詢的經緯度</td>
+        <td>Android 內建的 Geocoder（Google）、Photon、中文維基百科與 Wikidata</td>
+      </tr>
+      <tr>
+        <td>地圖圖磚</td>
+        <td>目前畫面要顯示的地圖範圍</td>
+        <td>OpenFreeMap、CARTO、Esri</td>
+      </tr>
+    </table>
+    <p>這些服務會依它們自己的政策看到你的 IP 位址。app 本身不保留查詢紀錄，也不會把這些資料送到開發者的伺服器（我們沒有伺服器）。</p>
+  </section>
+
+  <section>
+    <h2>權限用在哪裡</h2>
+    <table>
+      <tr><th>權限</th><th>做什麼</th></tr>
+      <tr><td>位置（精確）</td><td>讀你目前的真實位置，當作模擬的起點；停止模擬後把位置還原回真實定位。</td></tr>
+      <tr><td>前景服務（位置）</td><td>螢幕關掉之後，模擬的位置還要繼續沿著路線前進，所以要用前景服務。</td></tr>
+      <tr><td>重疊顯示在其他應用程式上方</td><td>把播放控制做成可以浮在其他 app 上的小面板。</td></tr>
+      <tr><td>通知</td><td>顯示「模擬進行中」那則常駐通知（前景服務必須有）。</td></tr>
+      <tr><td>震動</td><td>路線走完時震一下。</td></tr>
+    </table>
+    <p>另外，模擬位置本身要你在系統的「開發人員選項 → 選取模擬位置應用程式」把 PinPilot 選起來，這是 Android 的機制，隨時可以取消。</p>
+  </section>
+
+  <section>
+    <h2>兒童</h2>
+    <p>這個 app 不是針對 13 歲以下兒童設計的，也不會刻意蒐集兒童的資料。</p>
+  </section>
+
+  <section>
+    <h2>政策變更</h2>
+    <p>政策若有更動，會直接更新這一頁與上面的日期。</p>
+  </section>
+
+  <section>
+    <h2>聯絡方式</h2>
+    <p>有任何問題可以寄信到：<a href="mailto:sugiharaayumi@gmail.com">sugiharaayumi@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
