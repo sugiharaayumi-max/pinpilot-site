@@ -36,7 +36,7 @@
 <body>
 <main>
   <h1>PinPilot 隱私權政策</h1>
-  <div class="date">最後更新：2026 年 9 月 18 日</div>
+  <div class="date">最後更新：2026 年 10 月 4 日</div>
 
   <section>
     <p class="lead"><strong>PinPilot 不會蒐集、上傳或分享你的個人資料。</strong>
@@ -82,8 +82,20 @@
       <tr><td>重疊顯示在其他應用程式上方</td><td>把播放控制做成可以浮在其他 app 上的小面板。</td></tr>
       <tr><td>通知</td><td>顯示「模擬進行中」那則常駐通知（前景服務必須有）。</td></tr>
       <tr><td>震動</td><td>路線走完時震一下。</td></tr>
+      <tr><td>健康資料同步（Health Connect）：寫入步數</td><td>只有你在設定頁打開「模擬步數」時才會要。路線移動時，依移動距離把步數寫進健康資料同步。</td></tr>
     </table>
     <p>另外，模擬位置本身要你在系統的「開發人員選項 → 選取模擬位置應用程式」把 PinPilot 選起來，這是 Android 的機制，隨時可以取消。</p>
+  </section>
+
+  <section>
+    <h2>步數（健康資料同步）</h2>
+    <p>這是選用功能，預設關閉。你在設定頁打開「模擬步數」並同意授權之後：</p>
+    <ul>
+      <li>PinPilot 只<strong>寫入步數</strong>：路線移動時，依移動的距離把對應的步數寫進手機的健康資料同步（Health Connect）。沒在移動、暫停或停止時不寫。</li>
+      <li>PinPilot <strong>不讀取</strong>你的任何健康資料。</li>
+      <li>寫入的步數只留在你手機的健康資料同步裡，不會傳給開發者或任何第三方。你授權讀取步數的其他 app 會看到這些步數。</li>
+      <li>要停止：在設定頁關掉「模擬步數」，或到健康資料同步收回 PinPilot 的權限。已經寫入的步數可以在健康資料同步的「資料與存取權」裡刪除。</li>
+    </ul>
   </section>
 
   <section>
